@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/search.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Search</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Google Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/imagesSearch.html">Image Search</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- searchbox -->
+    <div class="AdvanceSearch">
+      <form class="col-12 AdContainer" action="https://google.com/search">
+        <div class="form-row mb-2">
+          <label class="col-sm-2 col-form-label" for="all"
+            >all these words:</label
+          >
+          <input
+            type="text"
+            class="form-control form-control-sm col-sm-4 mr-2"
+            name="as_q"
+            placeholder="Type the important words: tri-colour rat terrier"
+          />
+        </div>
+
+        <div class="form-row mb-2">
+          <label class="col-sm-2 col-form-label" for="all"
+            >this exact word or phrase:</label
+          >
+          <input
+            type="text"
+            class="form-control form-control-sm col-sm-4 mr-2"
+            name="as_epq"
+            placeholder="Put exact words in quotes: 'rat terrier'"
+          />
+        </div>
+
+        <div class="form-row mb-2">
+          <label class="col-sm-2 col-form-label" for="all"
+            >any of these words:</label
+          >
+          <input
+            type="text"
+            class="form-control form-control-sm col-sm-4 mr-2"
+            name="as_oq"
+            placeholder="Type OR between all the words you want: miniature OR standard"
+          />
+        </div>
+
+        <div class="form-row mb-2">
+          <label class="col-sm-2 col-form-label" for="all"
+            >none of these words:</label
+          >
+          <input
+            type="text"
+            class="form-control form-control-sm col-sm-4 mr-2"
+            name="as_eq"
+            placeholder="Put a minus sign just before words that you don't want: -rodent, -'Jack Russell'"
+          />
+        </div>
+
+        <div class="form-row mb-2">
+          <label class="col-sm-5"></label>
+          <input
+            type="submit"
+            value="Advanced Search"
+            class="btn btn-primary btn-xss"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
